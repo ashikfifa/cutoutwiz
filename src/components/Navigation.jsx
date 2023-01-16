@@ -28,7 +28,7 @@ function Navigation(props) {
     window.location.href = "./de";
   }
   return (
-    <Navbar collapseOnSelect sticky="top" expand="sm" bg="black" variant="dark">
+    <Navbar collapseOnSelect sticky="top" expand="md" bg="black" variant="dark">
       <Container>
         <div class="" onClick={refreshPage}>
           <Link class="navbar-brand" to="/">

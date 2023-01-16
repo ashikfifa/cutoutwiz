@@ -56,6 +56,7 @@
 .bannerWrap {
 	position: fixed;
 	top: 50%;
+    width: 100%;
 	transform: translate(0,-50%);
     z-index: 9;
     animation: popupAnim 2s;
@@ -69,4 +70,11 @@
 }
 .popupBanner img {
     width: 100%;
+}
+.mob_banner {
+    display: none;
+}
+@media only screen and (max-width: 575px) {
+.mob_banner {display: block;}
+.web_banner {display: none;}
 }

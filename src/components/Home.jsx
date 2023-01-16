@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 // import React from "react";
 import React, { Component, useState, useEffect, useRef } from "react";
-import TopBanner from "./TopBanner/TopBanner";
+import NewBanner from "./NewBanner/NewBanner";
 import BeforeAfterSlider from "react-before-after-slider";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -252,7 +252,7 @@ function Home(props) {
 
       {/*Banner section */}
 
-      <TopBanner />
+      <NewBanner />
 
       {/* Banner card section */}
 
@@ -3014,6 +3014,7 @@ function Home(props) {
           </div>
           <p
             style={{
+              marginBottom: "0",
               textAlign: "center",
               color: "white",
               padding: "8px",
