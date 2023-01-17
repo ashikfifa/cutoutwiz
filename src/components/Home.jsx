@@ -432,7 +432,7 @@ function Home(props) {
                 <br />
                 <div class="card-body" style={{ marginTop: "-3%" }}>
                   <h4 style={{ color: "#000000" }} class="card-title">
-                    12 Hourss
+                    12 Hours
                   </h4>
                   <hr
                     style={{
