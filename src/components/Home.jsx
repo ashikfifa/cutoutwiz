@@ -1,10 +1,13 @@
 import { render } from "@testing-library/react";
 // import React from "react";
 import React, { Component, useState, useEffect, useRef } from "react";
-import BeforeAfterSlider from "react-before-after-slider";
 import NewBanner from "./NewBanner/NewBanner";
+import BeforeAfterSlider from "react-before-after-slider";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Banner from "./Banner/Banner";
+import Map from "./Map/Map";
+import { Modal } from "react-bootstrap";
 //import Testimonial from 'react-testimonial';
 //import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
@@ -232,41 +235,10 @@ function Home(props) {
     }
   });
 
-  // if (!localStorage.getItem('/')) {
-  //   setTimeout(function() {
-  //    localStorage.setItem('/', true)
-  //    window.location.href = "/";
-  //   }, 2000);
-  // }
-
-  // $(document).ready(function() {
-  // function slide(){
-  //   if(o==1){
-  //   window.location.href = "/#";o++;}
-  //   else
-  //   clearInterval(time);
-  // }
-
-  // var time=setInterval(slide,'2000');
-  // });
-  // window.onload = function afterWebPageLoad() {
-
-  //   $("#logowiz").trigger('click');
-  // }
-
-  // setTimeout(function(){
-  //   window.location.reload(1);
-  // }, 90000);
-
-  // setTimeout(function() {
-  //   window.location.href = "v";
-  // }, 2000);
-
   return (
     <div className="home">
-      <Router>
-        <Navigation />
-      </Router>
+      <Navigation />
+
       <Helmet>
         <title>CutOutWiz : Image and Video Post Production</title>
         <meta
@@ -275,6 +247,8 @@ function Home(props) {
           content="CutOutWiz is one of the leading image and video editing company for businesses all over the world. As the world moves towards a virtual business base, product photo editing has been a very important part for any E-commerce business "
         />
       </Helmet>
+
+      <Banner />
 
       {/*Banner section */}
 
@@ -289,16 +263,13 @@ function Home(props) {
           backgroundPosition: "center",
           // backgroundColor: "#062220",
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          height: "109vh",
-          width: "100vw",
         }}
       >
         <div class="container" id="left-card">
           <div class="row">
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
-                class="card "
+                class="card"
                 style={{
                   border: "black",
                   width: "100%",
@@ -312,7 +283,7 @@ function Home(props) {
                   src="assets/images/image.png"
                   width="30%"
                   height="10%"
-                  alt="icon"
+                  alt="Image icon"
                 />
                 <br />
                 <div class="card-body" style={{ marginTop: "-3%" }}>
@@ -344,9 +315,9 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
-                class="card "
+                class="card"
                 style={{
                   border: "black",
                   width: "100%",
@@ -363,7 +334,7 @@ function Home(props) {
                   alt="Team icon"
                 />
                 <br />
-                <div class="card-body b2" style={{ marginTop: "-3%" }}>
+                <div class="card-body" style={{ marginTop: "-3%" }}>
                   <h4 style={{ color: "#000000" }} class="card-title">
                     500+
                   </h4>
@@ -392,7 +363,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -411,11 +382,7 @@ function Home(props) {
                   alt="Support icon"
                 />
                 <br />
-                <div
-                  class="card-body b2"
-                  style={{ marginTop: "-3%" }}
-                  id="text"
-                >
+                <div class="card-body" style={{ marginTop: "-3%" }} id="text">
                   <h4 style={{ color: "#000000" }} class="card-title">
                     365 Days
                   </h4>
@@ -444,7 +411,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -492,8 +459,8 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
-              <div class="card ">
+            <div class="col-md">
+              <div class="card-hidden">
                 <div
                   class="card"
                   style={{
@@ -512,7 +479,7 @@ function Home(props) {
                     alt="Free trial icon"
                   />
                   <br />
-                  <div class="card-body b2" style={{ marginTop: "-3%" }}>
+                  <div class="card-body" style={{ marginTop: "-3%" }}>
                     <h4 style={{ color: "#000000" }} class="card-title">
                       10+
                     </h4>
@@ -555,7 +522,6 @@ function Home(props) {
               fontWeight: "700",
             }}
           >
-            {/* about us section */}
             About us
           </p>
 
@@ -582,7 +548,6 @@ function Home(props) {
             best quality service.
           </p>
 
-          {/* Success record section */}
           <p
             id="sucRcd"
             style={{
@@ -630,7 +595,6 @@ function Home(props) {
                   src="assets/images/18m.png"
                   height="90%"
                   width="90%"
-                  alt=""
                 />
               </div>
               <div class="fade-in-text">
@@ -666,7 +630,6 @@ function Home(props) {
                   src="assets/images/40k.png"
                   height="90%"
                   width="90%"
-                  alt=""
                 />
               </div>
               <div class="fade-in-text40k">
@@ -702,7 +665,6 @@ function Home(props) {
                   src="assets/images/9.2k.png"
                   height="90%"
                   width="90%"
-                  alt=""
                 />
               </div>
 
@@ -739,7 +701,6 @@ function Home(props) {
                   src="assets/images/54k.png"
                   height="90%"
                   width="90%"
-                  alt=""
                 />
               </div>
 
@@ -820,7 +781,6 @@ function Home(props) {
                       left: "0",
                       marginLeft: "10%",
                     }}
-                    alt=""
                   />
                   <Slider
                     className="mainSlider"
@@ -841,7 +801,6 @@ function Home(props) {
                         height="556px"
                         width="534px"
                         style={{ left: "5%", top: "9%" }}
-                        alt=""
                       />
                       <img
                         id="photo1"
@@ -850,7 +809,6 @@ function Home(props) {
                         height="556px"
                         width="534px"
                         style={{ left: "5%", top: "9%" }}
-                        alt=""
                       />
                     </div>
 
@@ -1517,8 +1475,6 @@ function Home(props) {
             </div>
           </div>
 
-          {/* Review Section */}
-
           <div class="container" id="overflow" style={{ marginTop: "9%" }}>
             <Slider {...settings}>
               <div
@@ -1822,7 +1778,6 @@ function Home(props) {
       </div>
 
       {/* Plan  */}
-
       <div class="row">
         <div
           id="grenPhn"
@@ -2186,7 +2141,7 @@ function Home(props) {
             class="row"
             style={{ paddingLeft: "2%", paddingRight: "2%", marginTop: "5%" }}
           >
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -2228,7 +2183,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -2272,7 +2227,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -2313,7 +2268,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -2353,7 +2308,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -2393,7 +2348,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md">
               <div
                 class="card"
                 style={{
@@ -2531,7 +2486,7 @@ function Home(props) {
 
             <div class="col-md-3"></div>
           </div>
-          {/* blog section */}
+
           <div id="blog"></div>
           <div id="normalScreenHide">
             <h1
@@ -2839,27 +2794,7 @@ function Home(props) {
 
       {/* map */}
 
-      <div class="containerss">
-        <div class="row">
-          <div id="fotphn">
-            <img
-              id="map-img-phn"
-              src="assets/images/map.png"
-              class="rounded mx-auto d-block"
-              width="100%"
-              height="100%"
-              alt=""
-            />
-
-            <img
-              class="rounded mx-auto d-block"
-              width="100%"
-              height="100%"
-              src="assets/images/map-(1871-900).png"
-            />
-          </div>
-        </div>
-      </div>
+      <Map />
 
       {/* Footer */}
 
@@ -3079,10 +3014,10 @@ function Home(props) {
           </div>
           <p
             style={{
-              marginBottom: "0px",
+              marginBottom: "0",
               textAlign: "center",
               color: "white",
-              padding: "10px",
+              padding: "8px",
               backgroundColor: "black",
             }}
           >

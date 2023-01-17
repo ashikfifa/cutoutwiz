@@ -54,7 +54,7 @@ const TopBanner = () => {
               </p>
 
               <div class="row">
-                <div class="col-3 col-md-4">
+                <div class="col-6 col-md-4">
                   <a
                     class=""
                     href="https://app.cutoutwiz.com/"
@@ -65,9 +65,9 @@ const TopBanner = () => {
                   </a>
                 </div>
 
-                <div class="col-6 col-md-6">
+                <div class="col-6 col-md-8">
                   <Link to="/contact-us">
-                    <button type="button" id="button2" class="button2">
+                    <button type="button" id="button2">
                       FREE QUOTE
                     </button>
                   </Link>

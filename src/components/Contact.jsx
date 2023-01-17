@@ -56,7 +56,7 @@ export default function Contact() {
                   />
                 </div>
                 <div class="col-8 form-group mx-auto">
-                  <select id="inputState" class="form-control " name="option">
+                  <select id="inputState" class="form-control" name="option">
                     <option selected> --Select Option-- </option>
                     <option>Image Editing Service</option>
                     <option>Video Editing Service</option>
@@ -109,7 +109,7 @@ export default function Contact() {
                     <input
                       type="submit"
                       id="button-19"
-                      className="btn btn-info mx-auto"
+                      className="btn btn-info"
                       value="SUBMIT"
                     ></input>
                   </div>

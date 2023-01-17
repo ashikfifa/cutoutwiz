@@ -28,7 +28,7 @@ function Navigation(props) {
     window.location.href = "./de";
   }
   return (
-    <Navbar collapseOnSelect sticky="top" expand="sm" bg="black" variant="dark">
+    <Navbar collapseOnSelect sticky="top" expand="md" bg="black" variant="dark">
       <Container>
         <div class="" onClick={refreshPage}>
           <Link class="navbar-brand" to="/">
@@ -57,19 +57,6 @@ function Navigation(props) {
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
-            {/* <li class="nav-item active" onClick={refreshPage}>
-                <Link class="nav-link"  to="/">
-                  HOME
-                  <span class="sr-only">(current)</span>
-                </Link>
-        </li> */}
-
-            {/* <li class="nav-item">
-                <Link class="nav-link" to="/services">
-                  Tools & API
-                </Link>
-              </li> */}
-
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -122,18 +109,13 @@ function Navigation(props) {
               </a>
             </li>
 
-            {/* <li class="nav-item">
-              <Link class="nav-link" target="_blank" to="/make-your-own-show">
-                MAKE YOUR SHOE
-              </Link>
-            </li> */}
-
-            {/* <li class="nav-item">
-                <a class="nav-link" href="#contactus">
-                  
-                  CONTACT
-                </a>
-              </li> */}
+            <div class="">
+              <li class="nav-item">
+                <Link class="nav-link" to="/explore-our-services">
+                  EXPLORE
+                </Link>
+              </li>
+            </div>
 
             <li class="nav-item">
               <Link class="nav-link" target="_blank" to="/contact-us">

@@ -172,6 +172,9 @@ function Btntour() {
   );
 }
 
+function redirte() {
+  window.print("show-pos");
+}
 export default function Test() {
   return (
     <>
@@ -180,6 +183,31 @@ export default function Test() {
       </Router>
       <Helmet></Helmet>
       <div className="show-pos">
+        <p
+          style={{
+            textAlign: "center",
+            fontSize: "200%",
+            marginTop: "2%",
+            fontWeight: "700",
+          }}
+        >
+          {" "}
+          Customize your Shoe{" "}
+        </p>
+
+        <p
+          className="shoe-p"
+          style={{
+            textAlign: "center",
+            fontSize: "190%",
+            display: "none",
+            fontWeight: "600",
+          }}
+        >
+          {" "}
+          We offer recoloring and similar services to this.{" "}
+        </p>
+
         <Canvas shadows camera={{ position: [0, 0, 4], fov: 50 }}>
           <ambientLight intensity={0.7} />
           <spotLight
@@ -210,7 +238,17 @@ export default function Test() {
         </Canvas>
       </div>
       <Picker />
-      <Btntour />
+      <form>
+        <div className="text-center">
+          <Button
+            type="button"
+            onClick={redirte}
+            style={{ backgroundColor: "#c5da9c", border: "none" }}
+          >
+            Download
+          </Button>
+        </div>
+      </form>
     </>
   );
 }

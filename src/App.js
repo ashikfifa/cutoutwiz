@@ -57,7 +57,7 @@ import Thankyoufr from "./components/Thankyoufr";
 import Germany from "./components/Germany";
 import Dutch from "./components/Dutch";
 import Thankyouth from "./components/Thankyouth";
-import Screenshoot from "./components/Screenshot";
+import Test from "./components/Test";
 import Calendly from "./components/CalendlyTest";
 
 function App() {
@@ -83,9 +83,9 @@ function App() {
             component={() => <Typesofphoto />}
           />
           <Route
-            path="/make-your-own-show"
+            path="/explore-our-services"
             exact
-            component={() => <Screenshoot />}
+            component={() => <Test />}
           />
           <Route
             path="/7-creative-winter-marketing-ideas-for-e-commerce-businesses"
