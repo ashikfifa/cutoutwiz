@@ -1415,10 +1415,10 @@ input:checked {
     margin-top: -14% !important;
   }
 
-  #type-text {
+  /* #type-text {
     margin-top: 38% !important;
     margin-left: -15%;
-  }
+  } */
 
   .only-large {
     display: block !important;
@@ -1957,3 +1957,11 @@ button:not(:disabled) {
     align-items: center;
   }
 }
+/* 
+@media screen and (max-width: 992px) {
+    .abc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+} */
