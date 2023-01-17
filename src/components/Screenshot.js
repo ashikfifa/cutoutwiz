@@ -24,27 +24,18 @@ export default class Screenshoot extends Component {
 
       croppedCanvasContext.drawImage(Canvas, cropPositionLeft, cropPositionTop);
 
-      // const a = document.createElement("a");
-      // a.href = Canvas.toDataURL();
-      // a.download = "shoe.png";
-      // a.click();
+      const a = document.createElement("a");
+      a.href = Canvas.toDataURL();
+      a.download = "shoe.png";
+      a.click();
     });
   };
 
   render() {
     return (
-      <>
-        <div ref={this.ref}>
-          <Test />
-        </div>
-        <form>
-          <input
-            type="button"
-            value="Print This Page"
-            onClick={window.alert("test")}
-          />
-        </form>
-      </>
+      <div ref={this.ref}>
+        <Test />
+      </div>
     );
   }
 }

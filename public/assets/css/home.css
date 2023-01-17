@@ -29,6 +29,41 @@ body {
   width: 100vw;
   height: 80vh;
 }
+/*------ circle animation ------- */
+
+/* .circle-animation {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.ring {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  animation: ring 3s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 3px 1px white;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 3px 1px white;
+  }
+}
+*/
+
+.home {
+  overflow: hidden;
+}
 
 #shoe-picker {
   position: absolute;
@@ -153,7 +188,6 @@ input:checked {
   position: relative;
   background-size: cover;
 }
-
 .home {
   font-family: "poppins";
 }
@@ -400,10 +434,6 @@ input:checked {
     margin-top: 196%;
   }
 
-  .home {
-    overflow: hidden;
-  }
-
   .row {
     --bs-gutter-x: 0.5rem !important;
   }
@@ -416,7 +446,9 @@ input:checked {
     display: block !important;
     margin-top: -2%;
   }
-
+  #fot-phn {
+    margin-top: -34%;
+  }
   #map-large-screen {
     display: none;
   }
@@ -901,13 +933,19 @@ input:checked {
 }
 
 #button-19 {
+  text-align: center;
+  align-items: center;
   background-color: #ff9900;
   border: none;
   font-weight: 600;
   padding: 5px 42px;
   border-radius: 20px;
 
-  margin-right: 50%;
+  /* margin-right: 50%; */
+}
+#button-19:hover {
+  background-color: #000000;
+  color: white;
 }
 
 #button-20 {
@@ -1218,9 +1256,10 @@ input:checked {
 #normalScreenHide {
   display: none;
 }
-.cardid {
-  margin-top: -20vh;
-}
+/* .cardid{
+height: 104vh !important;
+width: 100vw;
+} */
 
 #imgser {
   font-size: 27px;
@@ -1329,10 +1368,6 @@ input:checked {
     height: 82vh !important;
   }
 
-  #left-card {
-    margin-left: 28% !important;
-  }
-
   #border10 {
     margin-top: -1% !important;
     width: 50% !important;
@@ -1413,11 +1448,6 @@ input:checked {
 
   #homeid {
     margin-top: -14% !important;
-  }
-
-  #type-text {
-    margin-top: 38% !important;
-    margin-left: -15%;
   }
 
   .only-large {
@@ -1697,6 +1727,9 @@ button:not(:disabled) {
   }
 }
 @media only screen and (max-width: 700px) {
+  .home {
+    overflow: hidden;
+  }
   .column {
     flex: 100%;
     display: block;
@@ -1918,42 +1951,11 @@ button:not(:disabled) {
   }
 }
 
-@media print {
-  html,
-  body {
-    visibility: hidden;
-
-    width: 100%;
-  }
-
-  canvas {
-    visibility: visible;
-
-    position: fixed;
-
-    top: 200px;
-
-    left: 50%;
-
-    transform: translate(-50%, 0);
-  }
-  .shoe-p {
-    visibility: visible !important;
-    display: block !important;
-    position: fixed;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  #logowiz {
-    width: 102px;
-
-    height: auto;
-  }
-
-  .navbar-nav {
-    font-size: 12px;
-
+@media screen and (max-width: 992px) {
+  .abc {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    /* background-color: #005500; */
   }
 }
