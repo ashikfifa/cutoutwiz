@@ -8,7 +8,6 @@ import {Helmet} from "react-helmet";
 //import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { MDBIcon, MDBContainer, MDBBtn } from 'mdbreact';
-import {PricingTable, PricingSlot, PricingDetail} from 'react-pricing-table';
 import { Card, CardHeader, CardBody, CardFooter } from 'react-simple-card';
 import Slider from "react-slick";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
