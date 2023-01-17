@@ -1415,10 +1415,10 @@ input:checked {
     margin-top: -14% !important;
   }
 
-  #type-text {
+  /* #type-text {
     margin-top: 38% !important;
     margin-left: -15%;
-  }
+  } */
 
   .only-large {
     display: block !important;
@@ -1957,11 +1957,19 @@ button:not(:disabled) {
     align-items: center;
   }
 }
+<<<<<<< HEAD
 
+=======
+/* 
+>>>>>>> 96445b205c3a4eff4d8d5eefeb1091495a7f9734
 @media screen and (max-width: 992px) {
     .abc {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> 96445b205c3a4eff4d8d5eefeb1091495a7f9734

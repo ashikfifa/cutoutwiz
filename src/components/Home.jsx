@@ -409,8 +409,62 @@ function Home(props) {
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
             <div className="abc">
               <div class="col-6 col-md">
+=======
+
+            <div class="col-6 col-md">
+              <div
+                class="card"
+                style={{
+                  border: "black",
+                  width: "100%",
+                  borderRadius: "10px",
+                  backgroundColor: "#e3e6d8",
+                  color: "white",
+                  boxShadow: "1px 2px 3px 4px rgba(12,12,12,0.2)",
+                }}
+              >
+                <img
+                  src="assets/images/delivery.png"
+                  width="30%"
+                  height="10%"
+                  alt="clock icon"
+                />
+                <br />
+                <div class="card-body" style={{ marginTop: "-3%" }}>
+                  <h4 style={{ color: "#000000" }} class="card-title">
+                    12 Hours
+                  </h4>
+                  <hr
+                    style={{
+                      width: "32%",
+                      border: "1px solid #000000",
+                      backgroundColor: "#000000",
+                      opacity: "1",
+                      marginTop: "-1%",
+                    }}
+                  ></hr>
+                  <p
+                    class="card-text"
+                    style={{
+                      marginTop: "-7%",
+                      fontWeight: "500",
+                      color: "#000000",
+                    }}
+                  >
+                    Or Less
+                    <br />
+                    Delivery Time
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="card-hidden">
+>>>>>>> 96445b205c3a4eff4d8d5eefeb1091495a7f9734
                 <div
                   class="card"
                   style={{
