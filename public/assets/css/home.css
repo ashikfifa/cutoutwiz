@@ -1329,9 +1329,9 @@ input:checked {
     height: 82vh !important;
   }
 
-  #left-card {
+  /* #left-card {
     margin-left: 28% !important;
-  }
+  } */
 
   #border10 {
     margin-top: -1% !important;
@@ -1415,10 +1415,10 @@ input:checked {
     margin-top: -14% !important;
   }
 
-  #type-text {
+  /* #type-text {
     margin-top: 38% !important;
     margin-left: -15%;
-  }
+  } */
 
   .only-large {
     display: block !important;
