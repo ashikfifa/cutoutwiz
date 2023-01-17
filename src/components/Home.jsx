@@ -2989,6 +2989,7 @@ function Home(props) {
                     href="https://app.cutoutwiz.com/"
                     target="_blank"
                     style={{ textDecoration: "none", color: "#01302b" }}
+                    rel="noreferrer"
                   >
                     Sign Up
                   </a>{" "}
