@@ -2911,6 +2911,7 @@ function Home(props) {
                     href="https://apps.shopify.com/cutoutwiz"
                     target="_blank"
                     style={{ textDecoration: "none", color: "#01302b" }}
+                    rel="noreferrer"
                   >
                     Shoppify App
                   </a>{" "}
@@ -2919,6 +2920,7 @@ function Home(props) {
                     href="https://sellercentral.amazon.com/gspn/provider-details/Imaging/284b7303-cec9-403e-b763-375399824520?ref_=sc_gspn_ilst_idt-284b7303&localeSelection=en_US&sellFrom=US&sellIn=US"
                     target="_blank"
                     style={{ textDecoration: "none", color: "#01302b" }}
+                    rel="noreferrer"
                   >
                     {" "}
                     AmazonSPN{" "}
@@ -2928,6 +2930,7 @@ function Home(props) {
                     href="https://app.cutoutwiz.com"
                     target="_blank"
                     style={{ textDecoration: "none", color: "#01302b" }}
+                    rel="noreferrer"
                   >
                     {" "}
                     Cutoutwiz
@@ -2937,6 +2940,7 @@ function Home(props) {
                     href="https://www.bigcommerce.com/apps/cutoutwiz"
                     target="_blank"
                     style={{ textDecoration: "none", color: "#01302b" }}
+                    rel="noreferrer"
                   >
                     {" "}
                     BigCommerce App
@@ -2946,6 +2950,7 @@ function Home(props) {
                     href="https://www.shotflow.com/"
                     target="_blank"
                     style={{ textDecoration: "none", color: "#01302b" }}
+                    rel="noreferrer"
                   >
                     {" "}
                     Shotflow
