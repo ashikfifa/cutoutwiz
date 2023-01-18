@@ -12,7 +12,6 @@ import { Modal } from "react-bootstrap";
 //import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import { MDBIcon, MDBContainer, MDBBtn } from "mdbreact";
-import { PricingTable, PricingSlot, PricingDetail } from "react-pricing-table";
 import { Card, CardHeader, CardBody, CardFooter } from "react-simple-card";
 import Slider from "react-slick";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -267,7 +266,7 @@ function Home(props) {
       >
         <div class="container" id="left-card">
           <div class="row">
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3 col-lg">
               <div
                 class="card"
                 style={{
@@ -315,7 +314,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3  col-lg">
               <div
                 class="card"
                 style={{
@@ -363,7 +362,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3  col-lg">
               <div
                 class="card"
                 style={{
@@ -411,7 +410,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3  col-lg">
               <div
                 class="card"
                 style={{
@@ -459,7 +458,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-md">
+            <div class="col-md  col-lg">
               <div class="card-hidden">
                 <div
                   class="card"

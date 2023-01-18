@@ -1510,9 +1510,6 @@ button:not(:disabled) {
 }
 
 @media only screen and (max-width: 980px) {
-  .card-hidden {
-    display: none;
-  }
 
   #sucphn {
     height: 60%;
@@ -1896,7 +1893,7 @@ button:not(:disabled) {
   animation-direction: alternate;
 }
 
-@media screen and (width: 820px), (width: 768px) {
+@media screen and (width: 820px), (width: 767px) {
   #cardid {
     margin-top: -65%;
   }
@@ -1945,6 +1942,9 @@ button:not(:disabled) {
 }
 
 @media only screen and (max-width: 991px) {
+  .card-hidden {
+    display: none;
+  }
   #logowiz {
     width: 102px;
 
