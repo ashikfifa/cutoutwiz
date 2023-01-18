@@ -19,6 +19,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Typical from "react-typical";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation } from ".";
+import Reviews from "./Reviews/Reviews";
 const $ = window.$;
 
 var c = 1,
@@ -165,27 +166,27 @@ function Home(props) {
     window.location.reload("/");
   }
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 1000,
+  //   autoplaySpeed: 4000,
+  //   cssEase: "linear",
 
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-    ],
-  };
+  //   responsive: [
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         initialSlide: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   window.addEventListener("scroll", () => {
     let content = document.querySelector(".fade-in-text");
@@ -1366,7 +1367,9 @@ function Home(props) {
 
       {/* Apps with testimonial slider */}
 
-      <div class="row">
+      <Reviews></Reviews>
+
+      {/* <div class="row">
         <div
           id="apps-large"
           style={{
@@ -1776,7 +1779,7 @@ function Home(props) {
             </Slider>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Plan  */}
       <div class="row">
