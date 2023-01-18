@@ -255,15 +255,7 @@ function Home(props) {
 
       {/* Banner card section */}
 
-      <div
-        class="cardid"
-        style={{
-          // backgroundImage: `url('assets/images/CUTOUTWIZ WEBSITE LIGHT VERSION L-03.png')`,
-          backgroundPosition: "center",
-          // backgroundColor: "#062220",
-          backgroundSize: "cover",
-        }}
-      >
+      <div class="cardid">
         <div class="container" id="left-card">
           <div class="row">
             <div class="col-6 col-md-3 col-lg">
@@ -569,18 +561,7 @@ function Home(props) {
 
       {/* Count Record */}
 
-      <div
-        class="spacew"
-        style={{
-          backgroundPosition: "center",
-          backgroundColor: "#c5da9c",
-          backgroundSize: "cover",
-          marginTop: "0%",
-          backgroundRepeat: "no-repeat",
-          width: "100vw",
-          height: "45vh",
-        }}
-      >
+      <div id="countRecord" class="spacew">
         <div class="container">
           <div class="row">
             <div
@@ -755,7 +736,7 @@ function Home(props) {
           id="service-top"
           style={{
             backgroundColor: "#e3e6d8",
-            width: "100vw",
+            //width: "100vw",
             marginTop: "-2%",
           }}
         >

@@ -394,7 +394,7 @@ input:checked {
 #map-img-phn {
   display: none !important;
 }
-
+/*
 @media only screen and (max-width: 980px) {
   #retouchCount {
     margin-top: 196%;
@@ -481,7 +481,6 @@ input:checked {
     margin-top: 301% !important;
   }
   #place-order {
-    /* margin-top: -80% !important; */
     height: 132vh !important;
   }
   #hidecol3 {
@@ -530,6 +529,7 @@ input:checked {
     -webkit-text-fill-color: #062220 !important;
   }
 }
+*/
 #priceColor {
   display: none;
 }
@@ -1218,15 +1218,12 @@ input:checked {
 #normalScreenHide {
   display: none;
 }
-.cardid {
-  margin-top: -20vh;
-}
 
 #imgser {
   font-size: 27px;
   font-weight: 700;
 }
-
+/*
 @media only screen and (min-width: 2500px) {
   #testret {
     margin-top: 0;
@@ -1329,10 +1326,6 @@ input:checked {
     height: 82vh !important;
   }
 
-  /* #left-card {
-    margin-left: 28% !important;
-  } */
-
   #border10 {
     margin-top: -1% !important;
     width: 50% !important;
@@ -1366,7 +1359,6 @@ input:checked {
 
   #cardid {
     height: 104vh !important;
-    /* margin-left: 1.5%; */
   }
 
   #map-large-screen {
@@ -1415,10 +1407,6 @@ input:checked {
     margin-top: -14% !important;
   }
 
-  /* #type-text {
-    margin-top: 38% !important;
-    margin-left: -15%;
-  } */
 
   .only-large {
     display: block !important;
@@ -1468,6 +1456,8 @@ input:checked {
   }
 }
 
+
+*/
 #prefer {
   display: none;
 }
@@ -1508,7 +1498,7 @@ button:not(:disabled) {
   color: white !important;
   font-size: 13px !important;
 }
-
+/*
 @media only screen and (max-width: 980px) {
 
   #sucphn {
@@ -1553,7 +1543,7 @@ button:not(:disabled) {
     overflow-x: hidden;
   }
 }
-
+*/
 .button-submit {
   background-color: #ffdd0b !important;
   color: white;
@@ -1662,11 +1652,8 @@ button:not(:disabled) {
 #mapid {
   margin-top: 0%;
 }
-
+/*
 @media only screen and (max-width: 980px) {
-  /* #cf3 img.tops {
-   animation-duration: 1s;
- } */
 
   #mapid {
     margin-top: 191%;
@@ -1693,6 +1680,7 @@ button:not(:disabled) {
     width: 90%;
   }
 }
+*/
 @media only screen and (max-width: 700px) {
   .column {
     flex: 100%;
@@ -1915,6 +1903,16 @@ button:not(:disabled) {
   }
 }
 
+/*shafayat start */
+#countRecord {
+	background-position: center center;
+	background-color: rgb(197, 218, 156);
+	background-size: cover;
+	margin-top: 0%;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 270px;
+}
 @media print {
   html,
   body {
@@ -1941,6 +1939,20 @@ button:not(:disabled) {
   }
 }
 
+
+@media only screen and (min-width: 1400px) {
+  #countRecord {
+    height: 325px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  #countRecord {
+    height: 230px;
+  }
+  #service-top{
+    margin-top: -3% !important;
+  }
+}
 @media only screen and (max-width: 991px) {
   .card-hidden {
     display: none;
@@ -1956,12 +1968,60 @@ button:not(:disabled) {
 
     align-items: center;
   }
-}
-/* 
-@media screen and (max-width: 992px) {
-    .abc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #countAnimFirst, #countAnim {
+    margin-top: 140px !important;
   }
-} */
+  #countRecord {
+    height: 222px !important;
+  }
+  .card {
+    min-height: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #abtHd {
+    margin-top: 85px !important;
+  }
+  #sucRcd {
+    margin-top: 100px !important;
+  }
+  #countRecord {
+    height: 2950px !important;
+  }
+  #countAnimFirst {
+    margin-top: 580px !important;
+  }
+  #countAnimFirst, #countAnim {
+    width: 360px;
+    margin: auto;
+  }
+  #service-top{
+    margin-top: -4% !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #countRecord {
+    height: 2820px !important;
+  }
+  #countAnimFirst {
+    margin-top: 684px !important;
+  }
+  #countAnimFirst, #countAnim {
+    width: 300px;
+  }
+  #service-top{
+    margin-top: -5% !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #countAnimFirst {
+    margin-top: 784px !important;
+  }
+  #countAnim {
+    margin-top: 100px !important;
+  }
+  #service-top{
+    margin-top: -7% !important;
+  }
+}
+/* shafayat end */
