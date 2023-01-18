@@ -266,7 +266,7 @@ function Home(props) {
       >
         <div class="container" id="left-card">
           <div class="row">
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3 col-lg">
               <div
                 class="card"
                 style={{
@@ -314,7 +314,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3  col-lg">
               <div
                 class="card"
                 style={{
@@ -362,7 +362,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3  col-lg">
               <div
                 class="card"
                 style={{
@@ -410,7 +410,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3  col-lg">
               <div
                 class="card"
                 style={{
@@ -458,7 +458,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div class="col-md">
+            <div class="col-md  col-lg">
               <div class="card-hidden">
                 <div
                   class="card"
