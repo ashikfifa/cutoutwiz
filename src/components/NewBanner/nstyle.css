@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #toppart_wrap {
     /* overflow: hidden; */
     background-image: url("./img/round_v_2.png");
@@ -117,9 +117,6 @@
     background-repeat: no-repeat;
   }
 
-  .cardid {
-    height: 800px !important;
-  }
   .circle-animation {
     position: absolute;
     display: flex;
