@@ -757,6 +757,7 @@ function Home(props) {
           style={{
             backgroundColor: "#e3e6d8",
             width: "100vw",
+            height: "850px",
             marginTop: "-2%",
           }}
         >
@@ -1373,7 +1374,7 @@ function Home(props) {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             width: "100vw",
-            height: "122vh",
+            height: "770px",
           }}
         >
           <div>
